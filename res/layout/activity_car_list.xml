@@ -1,0 +1,85 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- The main content view -->
+
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            style="@style/BackgroundLinearLayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvNoCars"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="15dp"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="40"
+                    android:gravity="center"
+                    android:text="@string/model" />
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="25"
+                    android:gravity="center"
+                    android:text="@string/motor_no_example" />
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="25"
+                    android:gravity="center"
+                    android:text="@string/manufactured" />
+
+                <TextView
+                    android:layout_width="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/listViewCars"
+                android:layout_width="wrap_content"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:visibility="gone" >
+            </ListView>
+
+            <include layout="@layout/common_progress_bar" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <!-- The navigation drawer -->
+
+    <ListView
+        android:id="@+id/left_drawer"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#333"
+        android:choiceMode="singleChoice"
+        android:divider="#666"
+        android:dividerHeight="1dp"
+        android:paddingLeft="15sp"
+        android:paddingRight="15sp" />
+
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,63 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- The main content view -->
+
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            style="@style/BackgroundLinearLayout"
+            android:orientation="vertical" >
+
+            <LinearLayout style="@style/FormLayout" >
+
+                <AutoCompleteTextView
+                    android:id="@+id/etModel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/rounded_edittext"
+                    style="@style/AutoCompleteTextViewLight"
+                    android:hint="@string/model"
+                    android:inputType="text" />
+
+                <EditText
+                    android:id="@+id/etMotor"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:hint="@string/motor"
+                    android:inputType="text" />
+
+                <EditText
+                    android:id="@+id/etManufactured"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_edittext"
+                    android:hint="@string/manufactured" 
+                    android:inputType="number"/>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+    <!-- The navigation drawer -->
+
+    <ListView
+        android:id="@+id/left_drawer"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#333"
+        android:choiceMode="singleChoice"
+        android:divider="#666"
+        android:dividerHeight="1dp"
+        android:paddingLeft="15sp"
+        android:paddingRight="15sp" />
+
+</android.support.v4.widget.DrawerLayout>

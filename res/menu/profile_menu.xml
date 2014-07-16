@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yourapp="http://schemas.android.com/apk/res-auto" >
+
+    <!-- Novo -->
+    <item
+        android:id="@+id/menu_edit"
+        android:icon="@drawable/ic_action_edit"
+        android:title="Editar"
+        android:visible="false"
+        yourapp:showAsAction="ifRoom"/>
+
+    <!-- Gravar -->
+    <item
+        android:id="@+id/menu_save"
+        android:icon="@drawable/ic_action_save"
+        android:title="Gravar"
+        android:visible="false"
+        yourapp:showAsAction="ifRoom"/>
+
+</menu>

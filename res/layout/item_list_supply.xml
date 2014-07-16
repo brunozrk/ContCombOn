@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/stupid_android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/stupid_android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="25"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:text="10/10/2010"
+                android:textColor="#2f6699"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/tvOdometer"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:text="250 Km" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/stupid_android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="30"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvFuel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:text="Etanol"
+                android:textColor="#2f6699"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/tvLiters"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:text="20L" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvAverage"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="30"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingLeft="5dp"
+            android:paddingTop="10dp"
+            android:text="25 km/L" />
+
+        <ImageView
+            android:id="@+id/tvIsFull"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="15"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingLeft="5dp"
+            android:paddingTop="10dp"
+            android:text="asdsa" />
+
+        <ImageView
+            android:id="@+id/imArrow"
+            android:layout_width="15dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_action_next_item" />
+    </LinearLayout>
+
+</RelativeLayout>

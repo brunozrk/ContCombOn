@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/stupid_android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tvFuel"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="30"
+            android:paddingBottom="10dp"
+            android:paddingLeft="5dp"
+            android:paddingTop="10dp"
+            android:text="25 km/L"
+            android:textColor="#2f6699" />
+
+        <TextView
+            android:id="@+id/tvAverage"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="30"
+            android:paddingBottom="10dp"
+            android:paddingLeft="5dp"
+            android:paddingTop="10dp"
+            android:text="25 km/L" />
+    </LinearLayout>
+
+</RelativeLayout>

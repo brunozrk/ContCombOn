@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="app_name">ContCombOn</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+	
+    <!-- Validations -->	
+    <string name="error">Erro</string>
+    <string name="field_required">Existem campos obrigatórios que não foram preenchidos.</string>
+    <string name="invalid_values">Valores Inválidos</string>
+    <string name="wrong_credentials">Login e/ou senha incorretos. \nTente novamente.</string>
+    <string name="wrong_confirm_password">Confirmação de senha incorreta.</string>
+    <string name="invalid_email">E-mail inválido.</string>
+    <string name="field_not_zero">O campo não pode ser zero (0).</string>
+
+   	<!-- Menu -->
+    <string-array name="items">
+        <item>Página Inicial</item>
+        <item>Carros</item>
+        <item>Abastecimetos</item>
+        <item>Resumo</item>
+        <item>Contato</item>
+        <item>Ranking</item>
+        <item>Perfil</item>
+        <item>Sair</item>
+    </string-array>
+    <string name="drawer_open">Abrir navigation drawer</string>
+    <string name="drawer_close">Fechar navigation drawer</string>
+    
+	<!-- Main Activity -->
+    <string name="login">Login</string>
+    <string name="password">Senha</string>
+    <string name="confirm_password">Confirmar Senha</string>
+    <string name="name">Nome</string>
+    <string name="email">E-mail</string>
+    <string name="log_in">Entrar</string>
+    <string name="create">Cadastrar</string>
+    <string name="create_account"><u>Cadastre-se</u></string>
+    <string name="loading">Carregando...</string>
+    
+    <!-- Index Activity -->
+    <string name="welcome">Bem Vindo ao ContCombOn!</string>
+    <string name="intro">Com esse aplicativo você terá mais controle de quanto o seu carro consome. Poderá comparar sua médias com os demais usuários!\nQuanto mais usuários, melhor o resumo que você poderá ter, divulgue!</string>
+    <string name="what_does_worth">O que compensa?*</string>
+    <string name="obs">*Esse cálculo só é válido para postos do Brasil.</string>
+    <string name="rs_ethanol">R$ Etanol</string>
+    <string name="or">ou</string>
+    <string name="rs_gasoline">R$ Gasolina</string>
+    <string name="ethanol_or_gasoline">Etanol ou Gasolina?</string>
+    <string name="ethanol">O valor do etanol é MENOR que 70% do valor da gasolina. Compensa abastecer com ETANOL. </string>
+    <string name="gasoline">O valor do etanol é MAIOR que 70% do valor da gasolina. Compensa abastecer com GASOLINA.</string>
+
+    <!-- Help Activity -->
+    <string name="ajuda">Ajuda</string>
+    <string name="dicas">Dicas:</string>
+    <string name="ajuda_editar">• Para editar um registro, toque o mesmo na tela de listagem.</string>
+    <string name="ajuda_excluir">• Para excluir um registro, toque e segure o mesmo na tela de listagem.</string>
+    <string name="ajuda_campo_obrigatorio">• Os campos com asterisco (*) são obrigatórios.</string>
+    <string name="ajuda_action_bar">• Atente-se para os botões na Action Bar.</string>
+    <string name="ajuda_menu">• O menu fica ao lado esquerdo, clique no ícone do app.</string>
+    
+    <!-- Contact Activity -->
+    <string name="message">Mensagem*</string>
+    <string name="reply">Quando respondermos a mensagem aparecerá aqui. Obrigado!</string>
+    <string name="send_success">Mensagem enviada com sucesso.</string>
+    <string name="no_messages">Não há mensagens cadastradas... \nEnvie uma dúvida, crítica ou sugestão que nós responderemos o mais breve possível!</string>
+    
+    <!-- Car Activity -->
+    <string name="no_cars">Não há carros cadastrados...</string>
+    <string name="model">Modelo</string>
+    <string name="motor">Motor (1.0, 1.6...)</string>
+    <string name="motor_no_example">Motor</string>
+    <string name="manufactured">Ano de Fabricação</string>
+    
+    <!-- Supply Activity -->
+    <string name="no_supplies">Não há abastecimentos cadastrados...</string>
+    <string name="date">Data</string>
+    <string name="odometer">Odômetro</string>
+    <string name="liters">Litros</string>
+    <string name="average">Média</string>
+    <string name="is_full">Tanque Cheio</string>
+    
+    <string name="odomoter_form">Odômetro *</string>
+    <string name="liters_form">Litros *</string>
+    <string name="is_full_form">Tanque cheio *</string>
+    <string name="date_form">Data *</string>
+    <string name="station_form">Posto</string>
+    <string name="fuel_price_form">Preço *</string>
+    <string name="obs_form">Observações</string>
+    
+    <!-- Summary Activity -->
+    <string name="vehicle_summary">Resumo do Veículo</string>
+    <string name="motor_summary">Motor:</string>
+    <string name="manufactured_summary">Ano:</string>
+    <string name="supply_summary">Resumo de Abastecimentos</string>
+    <string name="total_average_summary">Média Total:</string>
+    <string name="by_supply_summary">Por combustível:</string>
+    <string name="equal_vehicles_summary">Resumo de veículos iguais</string>
+    <string name="vehicles_found">veículos encontrados.</string>
+    <string name="vehicle_found">veículo encontrado.</string>
+    <string name="below_average">Abaixo da média geral :(</string>
+    <string name="same_average">Na média geral :)</string>
+    <string name="above_average">Acima da média geral :D</string>
+    <string name="criterion">Critério</string>
+    <string name="criterion_description" formatted="false">Abaixo da média: menos que 80% da média geral.\nNa média: entre 80% e 120% da média geral.\nAcima da média: acima de 120% da média geral.</string>
+    
+    <string name="congrats">Parabéns!</string>
+    <string name="create_success">Registro incluído com sucesso.</string>
+    <string name="update_success">Registro atualizado com sucesso.</string>
+    
+    <string name="delete_confirmation">Deseja realmente excluir o registro? </string>
+    <string name="confirmation">Confirmação</string>
+    <string name="yes">Sim</string>
+    <string name="no">Não</string>
+    <string name="delete_success">Registro excluído com sucesso.</string>
+</resources>
