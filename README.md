@@ -1,4 +1,4 @@
 ContCombOn
 ==========
 
-Aplicativo Android utilizando o seriviço [contcomb_api] (https://github.com/Brunozrk/contcomb_api).
+Aplicativo Android utilizando o serviço [contcomb_api] (https://github.com/Brunozrk/contcomb_api).
