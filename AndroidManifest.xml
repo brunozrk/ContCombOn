@@ -6,9 +6,9 @@
 
     <uses-sdk
         android:minSdkVersion="8"
-        android:targetSdkVersion="19" />
+        android:targetSdkVersion="21" />
 
-    <uses-permission android:name="android.permission.INTERNET" ></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
@@ -18,7 +18,9 @@
         android:theme="@style/Theme.AppCompat.Light.DarkActionBar" >
         <activity
             android:name="com.contcombon.MainActivity"
-            android:label="@string/app_name" >
+            android:configChanges="orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -26,29 +28,37 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.contcombon.IndexActivity">
-        </activity>
+            android:name="com.contcombon.IndexActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
         <activity
-            android:name="com.contcombon.RankingActivity">
-        </activity>        
-       	<activity
-            android:name="com.contcombon.ProfileActivity">
-        </activity>
+            android:name="com.contcombon.RankingActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
         <activity
-            android:name="com.contcombon.ContactActivity">
-        </activity>     
+            android:name="com.contcombon.ProfileActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
         <activity
-            android:name="com.contcombon.BaseActivity">
-        </activity>   
+            android:name="com.contcombon.ContactActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
         <activity
-            android:name="com.contcombon.CarActivity">
-        </activity>
+            android:name="com.contcombon.BaseActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
         <activity
-            android:name="com.contcombon.SupplyActivity">
-        </activity>
+            android:name="com.contcombon.CarActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
         <activity
-            android:name="com.contcombon.SummaryActivity">
-        </activity>                  
+            android:name="com.contcombon.SupplyActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.contcombon.SummaryActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>
