@@ -6,10 +6,10 @@
         android:id="@+id/stupid_android"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:padding="5dp"
         android:orientation="horizontal" >
 
         <LinearLayout
-            android:id="@+id/stupid_android"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="25"
@@ -37,7 +37,6 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/stupid_android"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="30"
@@ -64,16 +63,32 @@
                 android:text="20L" />
         </LinearLayout>
 
-        <TextView
-            android:id="@+id/tvAverage"
-            android:layout_width="0dip"
+        <LinearLayout
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="30"
-            android:gravity="center"
-            android:paddingBottom="10dp"
-            android:paddingLeft="5dp"
-            android:paddingTop="10dp"
-            android:text="25 km/L" />
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:text="Km/L"
+                android:textColor="#2f6699"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/tvAverage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:text="20L" />
+        </LinearLayout>
+
 
         <ImageView
             android:id="@+id/tvIsFull"
