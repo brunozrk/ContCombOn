@@ -23,6 +23,7 @@
         <item>Contato</item>
         <item>Ranking</item>
         <item>Perfil</item>
+        <item>Fechar</item>
         <item>Sair</item>
     </string-array>
     <string name="drawer_open">Abrir navigation drawer</string>

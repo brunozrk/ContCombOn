@@ -15,7 +15,8 @@ public interface StaticValues {
   int ACTION_CONTACT = 4;
   int ACTION_RANKING = 5;
   int ACTION_PROFILE = 6;
-  int ACTION_LOGOUT = 7;
+  int ACTION_CLOSE = 7;
+  int ACTION_LOGOUT = 8;
 
   String COLOR_RED = "#bd362f";
   String COLOR_BLUE = "#0044cc";

@@ -88,7 +88,10 @@ public abstract class BaseActivity extends ActionBarActivity {
           mountMenuItem(text, drawerListViewItems[StaticValues.ACTION_PROFILE], R.drawable.ic_action_person);
           break;
         case 7:
-          mountMenuItem(text, drawerListViewItems[StaticValues.ACTION_LOGOUT], R.drawable.ic_action_cancel);
+          mountMenuItem(text, drawerListViewItems[StaticValues.ACTION_CLOSE], R.drawable.ic_action_cancel);
+          break;
+        case 8:
+          mountMenuItem(text, drawerListViewItems[StaticValues.ACTION_LOGOUT], R.drawable.ic_action_reply);
           break;
         default:
           break;
@@ -205,6 +208,9 @@ public abstract class BaseActivity extends ActionBarActivity {
         case StaticValues.ACTION_PROFILE:
           Intent iProfile = new Intent(getBaseContext(), ProfileActivity.class);
           startActivity(iProfile);
+          finish();
+          break;
+        case StaticValues.ACTION_CLOSE:
           finish();
           break;
         case StaticValues.ACTION_LOGOUT:
