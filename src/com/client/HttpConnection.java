@@ -225,7 +225,7 @@ public class HttpConnection {
       parameters.add(new BasicNameValuePair(entry.getKey(), entry.getValue()));
     }
 
-    UrlEncodedFormEntity entity = new UrlEncodedFormEntity(parameters);
+    UrlEncodedFormEntity entity = new UrlEncodedFormEntity(parameters, "UTF-8");
     httpPost.setEntity(entity);
     return httpPost;
   }
