@@ -30,7 +30,7 @@
             android:layout_marginBottom="10dp"
             android:background="@drawable/rounded_edittext"
             android:hint="@string/login"
-            android:maxLength="15" />
+            android:maxLength="100" />
 
         <EditText
             android:id="@+id/etPassword"
@@ -40,7 +40,7 @@
             android:layout_marginBottom="10dp"
             android:background="@drawable/rounded_edittext"
             android:hint="@string/password"
-            android:maxLength="15" />
+            android:maxLength="100" />
 
         <Button
             android:id="@+id/btnLogin"
