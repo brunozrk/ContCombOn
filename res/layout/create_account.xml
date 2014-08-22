@@ -3,84 +3,75 @@
     style="@style/BackgroundLinearLayout"
     android:orientation="vertical" >
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.2"
-        android:orientation="vertical" >
+        android:layout_height="fill_parent" >
 
-        <TextView
-            style="@style/title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:text="@string/app_name" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.7"
-        android:orientation="vertical" >
-
-        <EditText
-            android:id="@+id/etName"
+        <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:background="@drawable/rounded_edittext"
-            android:hint="@string/name"
-            android:maxLength="100" />
+            android:layout_weight="0.7"
+            android:orientation="vertical" >
 
-        <EditText
-            android:id="@+id/etLogin"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:background="@drawable/rounded_edittext"
-            android:hint="@string/login"
-            android:maxLength="100" />
+            <EditText
+                android:id="@+id/etName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_edittext"
+                android:hint="@string/name"
+                android:maxLength="100" />
 
-        <EditText
-            android:id="@+id/etEmail"
-            android:inputType="textEmailAddress"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:background="@drawable/rounded_edittext"
-            android:hint="@string/email"
-            android:maxLength="100" />
+            <EditText
+                android:id="@+id/etLogin"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_edittext"
+                android:hint="@string/login"
+                android:maxLength="100" />
 
-        <EditText
-            android:id="@+id/etPassword"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:background="@drawable/rounded_edittext"
-            android:hint="@string/password"
-            android:inputType="textPassword"
-            android:maxLength="100" />
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_edittext"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:maxLength="100" />
 
-        <EditText
-            android:id="@+id/etConfirmPassword"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:background="@drawable/rounded_edittext"
-            android:hint="@string/confirm_password"
-            android:inputType="textPassword"
-            android:maxLength="100" />
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_edittext"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:maxLength="100" />
 
-        <Button
-            android:id="@+id/btnCreate"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            android:layout_marginBottom="5dp"
-            android:layout_marginTop="5dp"
-            android:background="@drawable/blue_button"
-            android:text="@string/create"
-            android:textColor="#ffffff" />
-    </LinearLayout>
+            <EditText
+                android:id="@+id/etConfirmPassword"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_edittext"
+                android:hint="@string/confirm_password"
+                android:inputType="textPassword"
+                android:maxLength="100" />
+
+            <Button
+                android:id="@+id/btnCreate"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/blue_button"
+                android:text="@string/create"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>

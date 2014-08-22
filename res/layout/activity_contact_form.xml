@@ -14,27 +14,32 @@
             style="@style/BackgroundLinearLayout"
             android:orientation="vertical" >
 
-            <LinearLayout style="@style/FormLayout" >
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
 
-                <EditText
-                    android:id="@+id/etMessage"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="10dp"
-                    android:background="@drawable/rounded_edittext"
-                    android:hint="@string/message"
-                    android:inputType="textMultiLine"
-                    android:lines="5" />
+                <LinearLayout style="@style/FormLayout" >
 
-                <EditText
-                    android:id="@+id/etReply"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/rounded_edittext"
-                    android:hint="@string/reply"
-                    android:inputType="textMultiLine"
-                    android:lines="5" />
-            </LinearLayout>
+                    <EditText
+                        android:id="@+id/etMessage"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/rounded_edittext"
+                        android:hint="@string/message"
+                        android:inputType="textMultiLine"
+                        android:lines="5" />
+
+                    <EditText
+                        android:id="@+id/etReply"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_edittext"
+                        android:hint="@string/reply"
+                        android:inputType="textMultiLine"
+                        android:lines="5" />
+                </LinearLayout>
+            </ScrollView>
         </LinearLayout>
     </FrameLayout>
 

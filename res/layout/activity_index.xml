@@ -14,80 +14,86 @@
             style="@style/BackgroundLinearLayout"
             android:orientation="vertical" >
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dip"
-                android:layout_weight="1"
-                android:orientation="vertical" >
-
-                <TextView
-                    style="@style/title"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:text="@string/welcome" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="10dp"
-                    android:text="@string/intro" />
-
-                <TextView
-                    style="@style/description"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/what_does_worth" />
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
 
                 <LinearLayout
-                    style="@style/FormLayout"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal" >
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
 
-                    <EditText
-                        android:id="@+id/etEthanol"
+                    <TextView
+                        style="@style/title"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginRight="2dp"
-                        android:layout_weight="0.3"
-                        android:background="@drawable/rounded_edittext"
-                        android:hint="@string/rs_ethanol"
-                        android:inputType="numberDecimal" />
+                        android:layout_gravity="center_horizontal"
+                        android:text="@string/welcome" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/or" />
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/intro" />
 
-                    <EditText
-                        android:id="@+id/etGasoline"
+                    <TextView
+                        style="@style/description"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="2dp"
-                        android:layout_weight="0.3"
-                        android:background="@drawable/rounded_edittext"
-                        android:hint="@string/rs_gasoline"
-                        android:inputType="numberDecimal" />
+                        android:text="@string/what_does_worth" />
 
-                    <ImageButton
-                        android:id="@+id/btnCalc"
+                    <LinearLayout
+                        style="@style/FormLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <EditText
+                            android:id="@+id/etEthanol"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="2dp"
+                            android:layout_weight="0.3"
+                            android:background="@drawable/rounded_edittext"
+                            android:hint="@string/rs_ethanol"
+                            android:inputType="numberDecimal" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/or" />
+
+                        <EditText
+                            android:id="@+id/etGasoline"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:layout_weight="0.3"
+                            android:background="@drawable/rounded_edittext"
+                            android:hint="@string/rs_gasoline"
+                            android:inputType="numberDecimal" />
+
+                        <ImageButton
+                            android:id="@+id/btnCalc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginLeft="2dp"
+                            android:background="@drawable/icon_button"
+                            android:src="@drawable/ic_action_help"
+                            android:title="@string/ethanol_or_gasoline" />
+                    </LinearLayout>
+
+                    <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="1dp"
-                        android:layout_marginLeft="2dp"
-                        android:background="@drawable/icon_button"
-                        android:src="@drawable/ic_action_help"
-                        android:title="@string/ethanol_or_gasoline" />
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/obs" />
                 </LinearLayout>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="10dp"
-                    android:text="@string/obs" />
-            </LinearLayout>
+            </ScrollView>
         </LinearLayout>
     </FrameLayout>
 
