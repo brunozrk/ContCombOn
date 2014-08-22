@@ -82,7 +82,7 @@
     <string name="average">Média</string>
     <string name="is_full">Tanque Cheio</string>
     
-    <string name="odomoter_form">Odômetro *</string>
+    <string name="odomoter_form">Km atual *</string>
     <string name="liters_form">Litros *</string>
     <string name="is_full_form">Tanque cheio *</string>
     <string name="date_form">Data *</string>
